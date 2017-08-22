@@ -175,7 +175,7 @@
     <Compile Include="DocumentObjectModel\enums\TabAlignment.cs" />
     <Compile Include="DocumentObjectModel\enums\TabLeader.cs" />
     <Compile Include="DocumentObjectModel\enums\TextFormat.cs" />
-    <Compile Include="DocumentObjectModel\enums\Underline.cs" />
+    <Compile Include="DocumentObjectModel\enums\FontLineStyle.cs" />
     <Compile Include="DocumentObjectModel\enums\UnitType.cs" />
     <Compile Include="DocumentObjectModel\Font.cs" />
     <Compile Include="DocumentObjectModel\Footnote.cs" />

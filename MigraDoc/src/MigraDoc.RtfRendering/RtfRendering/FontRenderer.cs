@@ -61,6 +61,7 @@ namespace MigraDoc.RtfRendering
             Translate("Size", "fs", RtfUnit.HalfPts, null, false);
             TranslateBool("Bold", "b", "b0", false);
             Translate("Underline", "ul");
+            Translate("Striketrough", "strike");
             TranslateBool("Italic", "i", "i0", false);
             Translate("Color", "cf");
 

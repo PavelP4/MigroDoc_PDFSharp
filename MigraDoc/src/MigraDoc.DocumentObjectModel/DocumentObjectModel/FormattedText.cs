@@ -527,10 +527,20 @@ namespace MigraDoc.DocumentObjectModel
         /// Gets or sets the underline property.
         /// </summary>
         [DV]
-        public Underline Underline
+        public FontLineStyle Underline
         {
             get { return Font.Underline; }
             set { Font.Underline = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the striketrough property.
+        /// </summary>
+        [DV]
+        public FontLineStyle Striketrough
+        {
+            get { return Font.Striketrough; }
+            set { Font.Striketrough = value; }
         }
 
         /// <summary>

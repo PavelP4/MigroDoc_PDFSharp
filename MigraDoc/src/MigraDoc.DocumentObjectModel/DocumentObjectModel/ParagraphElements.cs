@@ -211,9 +211,9 @@ namespace MigraDoc.DocumentObjectModel
             if ((textFormat & TextFormat.NotItalic) == TextFormat.NotItalic)
                 formattedText.Italic = false;
             if ((textFormat & TextFormat.Underline) == TextFormat.Underline)
-                formattedText.Underline = Underline.Single;
+                formattedText.Underline = FontLineStyle.Single;
             if ((textFormat & TextFormat.NoUnderline) == TextFormat.NoUnderline)
-                formattedText.Underline = Underline.None;
+                formattedText.Underline = FontLineStyle.None;
 
             return formattedText;
         }

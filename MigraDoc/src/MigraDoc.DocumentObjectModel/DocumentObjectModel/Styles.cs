@@ -221,7 +221,7 @@ namespace MigraDoc.DocumentObjectModel
             style.Font.Size = 10;
             style.Font.Bold = false;
             style.Font.Italic = false;
-            style.Font.Underline = Underline.None;
+            style.Font.Underline = FontLineStyle.None;
             style.Font.Color = Colors.Black;
             style.Font.Subscript = false;
             style.Font.Superscript = false;
@@ -323,7 +323,7 @@ namespace MigraDoc.DocumentObjectModel
             style = new Style(StyleNames.InvalidStyleName, StyleNames.Normal);
             style._buildIn.Value = true;
             style.Font.Bold = true;
-            style.Font.Underline = Underline.Dash;
+            style.Font.Underline = FontLineStyle.Dash;
             style.Font.Color = new Color(0xFF00FF00);
             Add(style);
         }

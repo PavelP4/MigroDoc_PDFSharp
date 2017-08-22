@@ -502,8 +502,8 @@
     <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\TextFormat.cs">
       <Link>DocumentObjectModel\enums\TextFormat.cs</Link>
     </Compile>
-    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\Underline.cs">
-      <Link>DocumentObjectModel\enums\Underline.cs</Link>
+    <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\FontLineStyle.cs">
+      <Link>DocumentObjectModel\enums\FontLineStyle.cs</Link>
     </Compile>
     <Compile Include="..\MigraDoc.DocumentObjectModel\DocumentObjectModel\enums\UnitType.cs">
       <Link>DocumentObjectModel\enums\UnitType.cs</Link>

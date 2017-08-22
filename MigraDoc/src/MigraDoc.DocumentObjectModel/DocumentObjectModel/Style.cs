@@ -380,7 +380,7 @@ namespace MigraDoc.DocumentObjectModel
                         refStyle = Document.Styles[Document.Styles.GetIndex(_baseStyle.Value)];
                         refFormat = refStyle.ParagraphFormat;
                         refFont = refFormat.Font;
-                        // Note: we must write "Underline = none" if the base style has "Underline = single" - we cannot
+                        // Note: we must write "FontLineStyle = none" if the base style has "FontLineStyle = single" - we cannot
                         // detect this if we compare with the built-in style that has no underline.
                         // Known problem: Default values like "OutlineLevel = Level1" will now be serialized
                         // TODO: optimize...

@@ -36,7 +36,7 @@ namespace MigraDoc.DocumentObjectModel
 {
     /// <summary>
     /// Specifies the format of a text.
-    /// Bold, Italic, or Underline will be ignored if NotBold, NotItalic, or NoUnderline respectively are specified at the same time.
+    /// Bold, Italic, or FontLineStyle will be ignored if NotBold, NotItalic, or NoUnderline respectively are specified at the same time.
     /// </summary>
     [Flags]
     public enum TextFormat

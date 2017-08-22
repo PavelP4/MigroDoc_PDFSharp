@@ -118,13 +118,13 @@ namespace MigraDoc.RtfRendering
             _enumTranslationTable.Add(OutlineLevel.Level9, 8);
 
             //UnderlineType
-            _enumTranslationTable.Add(Underline.Dash, "dash");
-            _enumTranslationTable.Add(Underline.DotDash, "dashd");
-            _enumTranslationTable.Add(Underline.DotDotDash, "dashdd");
-            _enumTranslationTable.Add(Underline.Dotted, "d");
-            _enumTranslationTable.Add(Underline.None, "none");
-            _enumTranslationTable.Add(Underline.Single, "");
-            _enumTranslationTable.Add(Underline.Words, "w");
+            _enumTranslationTable.Add(FontLineStyle.Dash, "dash");
+            _enumTranslationTable.Add(FontLineStyle.DotDash, "dashd");
+            _enumTranslationTable.Add(FontLineStyle.DotDotDash, "dashdd");
+            _enumTranslationTable.Add(FontLineStyle.Dotted, "d");
+            _enumTranslationTable.Add(FontLineStyle.None, "none");
+            _enumTranslationTable.Add(FontLineStyle.Single, "");
+            _enumTranslationTable.Add(FontLineStyle.Words, "w");
 
             //BorderStyle
             _enumTranslationTable.Add(BorderStyle.DashDot, "dashd");

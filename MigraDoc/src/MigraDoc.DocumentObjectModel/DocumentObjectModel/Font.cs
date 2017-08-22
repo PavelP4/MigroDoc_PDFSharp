@@ -191,13 +191,24 @@ namespace MigraDoc.DocumentObjectModel
         /// <summary>
         /// Gets or sets the underline property.
         /// </summary>
-        public Underline Underline
+        public FontLineStyle Underline
         {
-            get { return (Underline)_underline.Value; }
+            get { return (FontLineStyle)_underline.Value; }
             set { _underline.Value = (int)value; }
         }
-        [DV(Type = typeof(Underline))]
-        internal NEnum _underline = NEnum.NullValue(typeof(Underline));
+        [DV(Type = typeof(FontLineStyle))]
+        internal NEnum _underline = NEnum.NullValue(typeof(FontLineStyle));
+
+        /// <summary>
+        /// Gets or sets the striketrough property.
+        /// </summary>
+        public FontLineStyle Striketrough
+        {
+            get { return (FontLineStyle) _striketrough.Value; }
+            set { _striketrough.Value = (int) value; }
+        }
+        [DV(Type = typeof(FontLineStyle))]
+        internal NEnum _striketrough = NEnum.NullValue(typeof(FontLineStyle));
 
         /// <summary>
         /// Gets or sets the color property.
@@ -244,7 +255,7 @@ namespace MigraDoc.DocumentObjectModel
         //  + .Size = 8
         //  + .Bold = False
         //  + .Italic = False
-        //  + .Underline = wdUnderlineDouble
+        //  + .FontLineStyle = wdUnderlineDouble
         //  * .UnderlineColor = wdColorOrange
         //    .StrikeThrough = False
         //    .DoubleStrikeThrough = False
@@ -371,7 +382,7 @@ namespace MigraDoc.DocumentObjectModel
                     serializer.WriteSimpleAttribute("Italic", Italic);
 
                 if (!_underline.IsNull)
-                    serializer.WriteSimpleAttribute("Underline", Underline);
+                    serializer.WriteSimpleAttribute("FontLineStyle", Underline);
 
                 if (!_superscript.IsNull)
                     serializer.WriteSimpleAttribute("Superscript", Superscript);
@@ -412,7 +423,7 @@ namespace MigraDoc.DocumentObjectModel
                     serializer.WriteSimpleAttribute("Italic", Italic);
 
                 if (!_underline.IsNull && (font == null || Underline != font.Underline || font._underline.IsNull))
-                    serializer.WriteSimpleAttribute("Underline", Underline);
+                    serializer.WriteSimpleAttribute("FontLineStyle", Underline);
 
                 if (!_superscript.IsNull && (font == null || Superscript != font.Superscript || font._superscript.IsNull))
                     serializer.WriteSimpleAttribute("Superscript", Superscript);
@@ -436,7 +447,7 @@ namespace MigraDoc.DocumentObjectModel
           serializer.WriteSimpleAttribute("Italic", Italic);
 
         if (!this .underline.IsNull && (font == null || Underline != font.Underline))
-          serializer.WriteSimpleAttribute("Underline", Underline);
+          serializer.WriteSimpleAttribute("FontLineStyle", Underline);
 
         if (!this .superscript.IsNull && (font == null || Superscript != font.Superscript))
           serializer.WriteSimpleAttribute("Superscript", Superscript);
